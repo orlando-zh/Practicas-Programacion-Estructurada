@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #3498db;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.fa-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dark-mode .fa-button {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.light-mode .fa-button,
+.reset-mode .fa-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.reset-mode .fa-button {
+    background: linear-gradient(to right, var(--primary-color), #fff);
+    color: #333;
+}
